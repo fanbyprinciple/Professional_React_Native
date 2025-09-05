@@ -95,4 +95,22 @@ class MyClass extends Component {
 
 ```
 
+### Arrow functions
+
+```
+class MyClass2 extends Component {
+  handlePress = (event: any) => {
+    console.log(this);
+  }
+
+  render() {
+    return (
+      <Pressable onPress={this.handlePress}>
+        <Text>MyClass2</Text>
+      </Pressable>
+    );
+  }
+}
+```
+
 
